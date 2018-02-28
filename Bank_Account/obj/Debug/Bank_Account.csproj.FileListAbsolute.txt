@@ -1,0 +1,6 @@
+B:\University\Semestrul VI\APPOO\Bank_Account\bin\Debug\Bank_Account.exe.config
+B:\University\Semestrul VI\APPOO\Bank_Account\bin\Debug\Bank_Account.exe
+B:\University\Semestrul VI\APPOO\Bank_Account\bin\Debug\Bank_Account.pdb
+B:\University\Semestrul VI\APPOO\Bank_Account\obj\Debug\Bank_Account.csprojResolveAssemblyReference.cache
+B:\University\Semestrul VI\APPOO\Bank_Account\obj\Debug\Bank_Account.exe
+B:\University\Semestrul VI\APPOO\Bank_Account\obj\Debug\Bank_Account.pdb
