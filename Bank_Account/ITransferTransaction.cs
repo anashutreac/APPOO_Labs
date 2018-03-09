@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Bank_Account
 {
-    public interface ITransactions
+    public interface ITransferTransaction
     {
-        void showTransactions();
-        double getAmount();
-        double getTotalTransactions();
+        Boolean cardTransfer(double amount);
     }
-
 }
