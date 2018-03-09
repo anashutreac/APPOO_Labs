@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Bank_Account
 {
-    public interface ITransactions
+    interface IBankATM
     {
-        void showTransactions();
-        double getAmount();
-        double getTotalTransactions();
-    }
+        Boolean checkCardData();
+        double getCardBalance();
 
+        
+    }
 }

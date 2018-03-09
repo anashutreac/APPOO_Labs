@@ -6,21 +6,8 @@ using System.Threading.Tasks;
 
 namespace Bank_Account
 {
-    class CashInATM : ITransactions
+    class CashInATM 
     {
-        public double getAmount()
-        {
-            throw new NotImplementedException();
-        }
-
-        public double getTotalTransactions()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void showTransactions()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

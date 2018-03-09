@@ -8,6 +8,8 @@ namespace Bank_Account
 {
     interface ICurrency
     {
-        void takeCashDiferentCurrency(String currency, double amount);
+        double changeCashDiferentCurrency(String currency, double amount);
+        
+        
     }
 }

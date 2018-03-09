@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bank_Account
 {
-    public class Transaction : ITransactions
+    public class Transaction
     {
         private String transactionID;
         private String date;
@@ -36,14 +36,6 @@ namespace Bank_Account
             return totalTransactions;
         }
 
-        public void showTransactions()
-        {
-            Console.WriteLine("Transaction: {0}", transactionID);
-            Console.WriteLine("Date: {0}", date);
-            Console.WriteLine("Amount: {0}", amount);
-            Console.WriteLine("Status: {0}", getAmount());
-
-        }
 
     }
 }

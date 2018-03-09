@@ -8,6 +8,6 @@ namespace Bank_Account
 {
     interface ICashIn
     {
-        Boolean addCashToBalance(double amount);
+        Boolean addCashToBalance(double amount);  
     }
 }
