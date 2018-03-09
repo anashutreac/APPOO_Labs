@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Bank_Account
 {
-    public interface ITransferTransaction
+    interface ICurrency
     {
-        Boolean cardTransfer(double amount);
+        void takeCashDiferentCurrency(String currency, double amount);
     }
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Bank_Account
 {
-    public interface ICashInTransaction
+    interface ICashOut
     {
-        Boolean cardCashIn(double amount);
+        Boolean withdrawCashFromBalance(double amount);
     }
 }
