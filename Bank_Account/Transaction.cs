@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bank_Account
 {
-    public class Transaction
+    public class Transaction: ITransaction
     {
         private String transactionID;
         private String date;
@@ -36,6 +36,30 @@ namespace Bank_Account
             return totalTransactions;
         }
 
+        public Boolean cashOutBalance(double ammount)
+        {
+            if (amount > cardBalance)
+            {
+                return false;
+            }
+            else
+            {
+                cardBalance = cardBalance - amount;
+                return true;
+            }
+        }
 
+        public Boolean cashInBalance(double ammount)
+        {
+            if (amount > 0)
+            {
+                cardBalance = cardBalance + amount;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

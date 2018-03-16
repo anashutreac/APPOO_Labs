@@ -6,25 +6,37 @@ using System.Threading.Tasks;
 
 namespace Bank_Account
 {
-    class WithdrawATM: ITransactions
-    {
+    class WithdrawATM: IBankATM, ICashOut { 
+
         private int atmID;
+        private String accountNo;
         private String address;
+        BankAccount data;
+        Transaction transaction;
 
-        public void showTransactions()
+
+        public bool checkCardData()
         {
-            throw new NotImplementedException();
+            if (this.accountNo == data.getAccountNo())
+                return true;
+            else
+                return false;
+
         }
 
-        public double getAmount()
+        public double getCardBalance()
         {
-            throw new NotImplementedException();
+            double balance = data.getCardBalance();
+            return balance;
+            
         }
 
-        public double getTotalTransactions()
+        public bool withdrawCashFromBalance(double amount)
         {
-            throw new NotImplementedException();
+            double newBalance;
+            newBalance = data.getCardBalance() - amount;
+            transaction.cashOutBalance(newBalance);
+            return true;
         }
-
     }
 }

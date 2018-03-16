@@ -43,16 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BankATM.cs" />
+    <Compile Include="CashInATM.cs" />
+    <Compile Include="CurrencyATM.cs" />
+    <Compile Include="IBankATM.cs" />
+    <Compile Include="ICashIn.cs" />
+    <Compile Include="ICashOut.cs" />
+    <Compile Include="ICurrency.cs" />
+    <Compile Include="WithdrawATM.cs" />
     <Compile Include="IBankCard.cs" />
     <Compile Include="DebitCard.cs" />
-    <Compile Include="InternetBanking.cs" />
-    <Compile Include="ITransactions.cs" />
     <Compile Include="PremiumCard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CreditCard.cs" />
     <Compile Include="TestBank_Account.cs" />
+    <Compile Include="Transaction.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

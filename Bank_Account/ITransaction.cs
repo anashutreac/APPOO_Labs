@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Bank_Account
 {
-    interface ICurrency
+    interface ITransaction
     {
-        double changeCashDiferentCurrency(String currency, double amount);
-        
+        Boolean cashOutBalance(double ammount);
+
+        Boolean cashInBalance(double ammount);
     }
 }

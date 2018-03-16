@@ -1,0 +1,20 @@
+\section{Laboratory work implementation}
+
+\subsection{Analiza lucrarii de laborator}
+
+Single-responsibility principle
+
+După cum puteți vedea, acest principiu afirmă că un obiect / clasă ar trebui să aibă doar o singură responsabilitate și că ar trebui să fie complet încapsulat de clasă. Aici, când vorbim despre o responsabilitate, ne referim la un motiv de schimbare. Acest principiu va conduce la o mai mare coeziune în clasă și la o legătură mai relaxantă între clasele de dependență, la o mai bună citire și la un cod cu o complexitate mai mică.
+
+Este mult mai dificil să înțelegi și să editezi o clasă atunci când are diverse responsabilități. Deci, dacă avem mai multe motive să ne schimbăm, funcționalitatea va fi împărțită în două clase și fiecare își va ocupa propria responsabilitate.
+
+Ne pasă de separarea funcționalităților, deoarece fiecare responsabilitate este un acces al schimbării. Atunci când o clasă are mai mult decât o singură responsabilitate, aceste responsabilități devin cuplate și această cuplare poate duce la o bază fragilă de coduri care este dificil de refăcut atunci când cerințele dvs. apar.
+
+Interface segregation principle
+
+Practic, odată ce o interfață devine prea mare  este absolut necesar să o împărțim în interfețe mici care sunt mai specifice. Interfața va fi definită de clientul care o va utiliza, ceea ce înseamnă că clientul interfeței nu va cunoaște decât metodele legate de ele.
+
+De fapt, dacă adăugați metode care nu ar trebui să fie acolo, clasele de implementare a interfeței vor trebui să implementeze și aceste metode. Acesta este motivul pentru care; clientul nu ar trebui să fie obligat să depindă de interfețele pe care nu le utilizează. Interface segregation principle are scopul de a menține un sistem decuplat și, prin urmare, mai ușor de refactor, de schimbare și de implementare.
+
+
+\clearpage
