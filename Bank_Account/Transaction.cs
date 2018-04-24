@@ -13,6 +13,7 @@ namespace Bank_Account
         private double amount;
         private String status;
         private double totalTransactions;
+        private double cardBalance;
 
         public Transaction()
         {

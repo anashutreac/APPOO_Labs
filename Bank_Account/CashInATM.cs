@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Bank_Account
 {
-    class CashInATM : IBankATM, ICashIn, ICashOut
+    class CashInATM : BankATM
     {
-        private int atmID;
-        private String accountNo;
-        private String address;
         BankAccount data;
         Transaction transaction;
-        private int pinCode;
 
+        public CashInATM(int atmID, String accountNo, String address, BankAccount data, Transaction transaction, int pinCode) : base(atmID, accountNo, address, data, transaction, pinCode)
+        {
+            
+        }
 
         public bool addCashToBalance(double amount)
         {
@@ -24,27 +24,6 @@ namespace Bank_Account
             return true;
         }
 
-        public bool checkCardData()
-        {
-            if (this.accountNo == data.getAccountNo())
-                return true;
-            else
-                return false; ;
-        }
-
-        public double getCardBalance()
-        {
-            double balance = data.getCardBalance();
-            return balance;
-
-        }
-
-        public bool withdrawCashFromBalance(double amount)
-        {
-            double newBalance;
-            newBalance = data.getCardBalance() - amount;
-            transaction.cashOutBalance(newBalance);
-            return true;
-        }
+        
     }
 }

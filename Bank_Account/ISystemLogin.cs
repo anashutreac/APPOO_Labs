@@ -8,5 +8,8 @@ namespace Bank_Account
 {
     interface ISystemLogin
     {
+        int validateData();
+        int loginSystem();
+        
     }
 }
