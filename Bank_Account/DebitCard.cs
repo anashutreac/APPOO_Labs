@@ -12,6 +12,7 @@ namespace Bank_Account
         private double transactionFee;
         private double deposit;
         private double cashbackServices;
+        
 
         public DebitCard(string accountNo, string accountName, string personID, double cardBalance, int transactionsNo) 
             : base(accountNo, accountName, personID, cardBalance)

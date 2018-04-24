@@ -13,6 +13,11 @@ namespace Bank_Account
         private String personID;
         private double cardBalance;
 
+        public BankAccount()
+        {
+
+        }
+
         public BankAccount(String accountNo, String personName, String personID, double cardBalance)
         {
             this.accountNo = accountNo;

@@ -49,6 +49,7 @@
     <Compile Include="ICashIn.cs" />
     <Compile Include="ICashOut.cs" />
     <Compile Include="ICurrency.cs" />
+    <Compile Include="ITransaction.cs" />
     <Compile Include="WithdrawATM.cs" />
     <Compile Include="IBankCard.cs" />
     <Compile Include="DebitCard.cs" />

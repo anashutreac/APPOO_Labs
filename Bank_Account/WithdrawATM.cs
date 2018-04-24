@@ -13,6 +13,7 @@ namespace Bank_Account
         private String address;
         BankAccount data;
         Transaction transaction;
+        private int pinCode;
 
 
         public bool checkCardData()
