@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Bank_Account
 {
     class PremiumCard : BankAccount, IBankCard
-    {
+    { 
         private double anualTax;
         private double transactionFee;
         private double interestRate;

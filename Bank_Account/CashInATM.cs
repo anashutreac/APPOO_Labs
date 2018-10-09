@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Bank_Account
 {
-    class CashInATM : BankATM
+    class CashInATM : BankATM, ValidationCard
     {
         BankAccount data;
         Transaction transaction;
+        private int pinCode;
 
         public CashInATM(int atmID, String accountNo, String address, BankAccount data, Transaction transaction, int pinCode) : base(atmID, accountNo, address, data, transaction, pinCode)
         {
@@ -24,6 +25,19 @@ namespace Bank_Account
             return true;
         }
 
-        
+        public bool validateCard(string accountNo, string personID, string pin)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool validateCard(string accountNo, string personID, int pin)
+        {
+            if ((accountNo == accountNo) && (personID == data.getAccountNo()) && (pin == pinCode))
+            {
+                return true;
+            }
+            else return false;
+        }
+
     }
 }

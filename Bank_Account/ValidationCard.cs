@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Bank_Account
 {
-    interface ISystemLogin
+    interface ValidationCard
     {
-       Boolean validateData();
-        Boolean loginSystem();
-        
+        Boolean validateCard(string accountNo, string personID, int pin);
     }
 }

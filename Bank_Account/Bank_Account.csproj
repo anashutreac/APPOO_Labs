@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Bank_Account</RootNamespace>
     <AssemblyName>Bank_Account</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,13 +44,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BankATM.cs" />
     <Compile Include="CashInATM.cs" />
     <Compile Include="CurrencyATM.cs" />
     <Compile Include="IBankATM.cs" />
     <Compile Include="ICashIn.cs" />
     <Compile Include="ICashOut.cs" />
     <Compile Include="ICurrency.cs" />
+    <Compile Include="IndividualPerson.cs" />
+    <Compile Include="ISystemLogin.cs" />
     <Compile Include="ITransaction.cs" />
+    <Compile Include="LegalPerson.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="ValidationCard.cs" />
     <Compile Include="WithdrawATM.cs" />
     <Compile Include="IBankCard.cs" />
     <Compile Include="DebitCard.cs" />
